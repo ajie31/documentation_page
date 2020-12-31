@@ -2,27 +2,87 @@
     font-family:'Open Sans',arial,sans-serif;
     color: #2b2b2b;
     background:#fff;
+    scroll-behavior: smooth;
 }
 
-h2{
+header{
+    font-size: 1.5rem;
     font-weight: 800;
 }
 h3{
     font-weight:600;
 }
 h5{
+    font-size:1rem;
     font-weight: 600;
 }
-
+.main-section>ol{
+    padding-left:0;
+}
+.main-section>ol>li{
+    border-top: 2px solid #e7e9ed;
+}
+dd{
+    margin:0;
+}
+.fa-question-circle{
+    font-size: 1rem;
+    font-weight: 600;
+}
 body{
     padding-top:69px;
     margin:0;
 }
 .doc-wrapper{
-    margin-left:300px;
+    margin-left:350px;
 }
 #main-doc{
     margin:0 auto;
-    max-width: 900px;
-    padding:0 0 0 2em;
+    max-width: 1140px;
+    padding:0 1rem 0 2rem;
+}
+.main-section{
+    padding-top :75px;
+}
+
+#Code>h3{
+    padding-left:1rem;
+    padding-top:1.5rem;
+    margin-top: 0;
+    border-top: 2px solid #e7e9ed;
+
+}
+#Code>.code-wrapper{
+    max-width: 100%;
+    overflow: auto;
+}
+.code-wrapper>code>pre{
+
+    margin-left:-10rem;
+
+    overflow-x:auto;
+}
+
+#Resources>.resources-wrapper{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items:center;
+    border-top: 1px solid #e7e9ed;
+}
+.resources-wrapper>.resources-content{
+    flex: .25%;
+}
+@media screen and (max-width: 964px) {
+    .doc-wrapper{
+        margin:0 auto;
+    }
+    #main-doc{
+        padding:0 2rem;
+    }
+}
+@media screen and (max-width: 550px) {
+    #Resources>.resources-wrapper{
+        flex-direction:column;
+    }
 }

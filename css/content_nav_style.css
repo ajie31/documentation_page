@@ -1,3 +1,12 @@
+
+@keyframes showNavbar {
+    from {left:-100%;}
+    to {left:0%;}
+}
+@keyframes hideNavbar {
+    from {left:0%;}
+    to {left:-100%;}
+}
 #navbar{
     width:300px;
     height:calc(100vh - 71px);
@@ -5,38 +14,62 @@
     z-index:10;
     box-shadow:1px 0px 3px 0 rgba(0,0,0,0.2);
     background: #fff;
-    padding:0 0.2em 0 1em;
+    padding:0 1em 0 1em;
     display:flex;
     flex-direction:column;
     overflow-y:auto;
+    overflow-x: hidden;
+    left:-100%;
+    animation: showNavbar 1s forwards;
+    animation-play-state: play;
 }
-ul{
+#navbar>header>h2{
+    margin-bottom:0;
+}
+#navbar>ul{
     padding:0;
     display:flex;
     flex-direction:column;
 }
-li{
+#navbar>ul>li{
     width:auto;
     height:auto;
-
 }
 a{
+    display: inline-block;
     text-decoration:none;
     color: inherit;
 }
-.nav-link{
+.child-link{
     margin-left:2.5rem;
     padding:0.5rem 1rem;
-    display: inline-block;
     border-left: 3px solid lightgray;
     font-size:0.85rem;
 
 }
 
-.nav-link.head-link{
+.nav-link{
     margin: 1rem 0;
     padding: 0;
     border:none;
     font-size:1rem;
     font-weight:600;
+}
+.icon-left{
+    width:24px;
+    margin:0 .4rem;
+    display:inline-block;
+    text-align:center;
+}
+.icon-left>i{
+    font-size:1.1rem;
+}
+@media screen and (max-width: 964px) {
+    #navbar{
+
+        animation: hideNavbar 1s forwards;
+        animation-play-state: play;
+    }
+
+
 }
