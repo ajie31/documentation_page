@@ -1,0 +1,10 @@
+#navbar-top{
+    width:100%;
+    min-height:69px;
+    position: fixed;
+    z-index:20;
+    top:0;
+    left:0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0,0.2);
+    background:#fff;
+}
