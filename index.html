@@ -10,40 +10,45 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     </head>
     <body>
         <nav id="navbar-top">
              <a id="showHide-navbar" class="show"  onClick="showHide()" ><i class="fas fa-bars"></i></a>
+             <div class="header_Logo">
+                 <span class="logo"></span><h1 class="bold_logo">Coding<span class="thin_text">Docs</span> </h1>
+             </div>
         </nav>
         <nav id="navbar">
             <header>
                 <h2>Web Documentation Test</h2>
             </header>
             <ul style="list-style:none;">
-                <li>  <a class="nav-link" href="#Introduction"><span class="icon-left"><i class="far fa-bookmark"></i></span>Introduction</a> </li>
-                <li> <a class="nav-link" href="#Installation"><span class="icon-left"><i class="fas fa-arrow-down"></i></span>Installation</a> </li>
-                <li> <a class="child-link" href="#">Step One</a> </li>
-                <li> <a class="child-link" href="#">Step Two</a> </li>
-                <li> <a class="child-link" href="#">Step Three</a> </li>
-                <li> <a class="child-link" href="#">Step Four</a> </li>
-                <li> <a class="child-link" href="#">Step Five</a> </li>
-                <li> <a class="nav-link" href="#Code"><span class="icon-left"><i class="fas fa-code"></i></span>Code</a> </li>
-                <li> <a class="child-link" href="#">HTML</a> </li>
-                <li> <a class="child-link" href="#">CSS Example 1</a> </li>
-                <li> <a class="child-link" href="#">CSS Example 2</a> </li>
-                <li> <a class="child-link" href="#">CSS Example 3</a> </li>
-                <li> <a class="child-link" href="#">JavaScript Example</a> </li>
-                <li> <a class="nav-link" href="#Accessibility"><span class="icon-left"><i class="fas fa-mobile-alt"></i></span>Accessibility</a> </li>
-                <li> <a class="child-link" href="#">Mobile</a> </li>
-                <li> <a class="child-link" href="#">Web</a> </li>
-                <li> <a class="nav-link" href="#Resources"><span class="icon-left"><i class="fas fa-database"></i></span>Resources</a> </li>
-                <li> <a class="child-link" href="#">List 1 Example</a> </li>
-                <li> <a class="child-link" href="#">List 2 Example</a> </li>
-                <li> <a class="nav-link" href="#FAQs"><span class="icon-left"><i class="fas fa-lightbulb"></i></span>FAQs</a> </li>
-                <li> <a class="child-link" href="#">FAQ Catagory 1</a> </li>
-                <li> <a class="child-link" href="#">FAQ Catagory 2</a> </li>
-                <li> <a class="child-link" href="#">FAQ Catagory 3</a> </li>
+                <li>  <a class="nav-link" onClick="closeWhenClick()" href="#Introduction"><span class="icon-left"><i class="far fa-bookmark"></i></span>Introduction</a> </li>
+                <li> <a class="nav-link" onClick="closeWhenClick()" href="#Installation"><span class="icon-left"><i class="fas fa-arrow-down"></i></span>Installation</a> </li>
+                <li> <a class="child-link" onClick="closeWhenClick()" href="#step_one">Step One</a> </li>
+                <li> <a class="child-link" onClick="closeWhenClick()" href="#step_two">Step Two</a> </li>
+                <li> <a class="child-link" onClick="closeWhenClick()" href="#step_three">Step Three</a> </li>
+                <li> <a class="child-link" onClick="closeWhenClick()" href="#step_four">Step Four</a> </li>
+                <li> <a class="child-link" onClick="closeWhenClick()" href="#step_five">Step Five</a> </li>
+                <li> <a class="nav-link" onClick="closeWhenClick()" href="#Code"><span class="icon-left"><i class="fas fa-code"></i></span>Code</a> </li>
+                <li> <a class="child-link" onClick="closeWhenClick()" href="#HTML">HTML</a> </li>
+                <li> <a class="child-link" onClick="closeWhenClick()" href="#CSS_Example_1">CSS Example 1</a> </li>
+                <li> <a class="child-link" onClick="closeWhenClick()" href="#CSS_Example_2">CSS Example 2</a> </li>
+                <li> <a class="child-link" onClick="closeWhenClick()" href="#CSS_Example_3">CSS Example 3</a> </li>
+                <li> <a class="child-link" onClick="closeWhenClick()" href="#JavaScript_Example">JavaScript Example</a> </li>
+                <li> <a class="nav-link" onClick="closeWhenClick()" href="#Accessibility"><span class="icon-left"><i class="fas fa-mobile-alt"></i></span>Accessibility</a> </li>
+                <li> <a class="child-link" onClick="closeWhenClick()" href="#Mobile">Mobile</a> </li>
+                <li> <a class="child-link" onClick="closeWhenClick()" href="#Web">Web</a> </li>
+                <li> <a class="nav-link" onClick="closeWhenClick()" href="#Resources"><span class="icon-left"><i class="fas fa-database"></i></span>Resources</a> </li>
+                <li> <a class="child-link" onClick="closeWhenClick()" href="#List_1_Example">List 1 Example</a> </li>
+                <li> <a class="child-link" onClick="closeWhenClick()" href="#List_2_Example">List 2 Example</a> </li>
+                <li> <a class="nav-link" onClick="closeWhenClick()" href="#FAQs"><span class="icon-left"><i class="fas fa-lightbulb"></i></span>FAQs</a> </li>
+                <li> <a class="child-link" onClick="closeWhenClick()" href="#FAQ_Catagory_1">FAQ Catagory 1</a> </li>
+                <li> <a class="child-link" onClick="closeWhenClick()" href="#FAQ_Catagory_2">FAQ Catagory 2</a> </li>
+                <li> <a class="child-link" onClick="closeWhenClick()" href="#FAQ_Catagory_3">FAQ Catagory 3</a> </li>
             </ul>
         </nav>
         <div class="doc-wrapper">
@@ -75,7 +80,7 @@
                         <ol style="list-style-type: none;">
                             <li>
                                 <dl>
-                                    <dt><h3>Step One</h3></dt>
+                                    <dt><h3  id="step_one">Step One</h3></dt>
                                     <dd><p>
                                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                                         Aenean commodo ligula eget dolor. Aenean massa.
@@ -86,7 +91,7 @@
                             </li>
                             <li>
                                 <dl>
-                                    <dt><h3>Step Two</h3></dt>
+                                    <dt><h3  id="step_two">Step Two</h3></dt>
                                     <dd><p>
                                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                                         Aenean commodo ligula eget dolor. Aenean massa.
@@ -97,7 +102,7 @@
                             </li>
                             <li>
                                 <dl>
-                                    <dt><h3>Step Three</h3></dt>
+                                    <dt><h3  id="step_three">Step Three</h3></dt>
                                     <dd><p>
                                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                                         Aenean commodo ligula eget dolor. Aenean massa.
@@ -108,7 +113,7 @@
                             </li>
                             <li>
                                 <dl>
-                                    <dt><h3>Step Four</h3></dt>
+                                    <dt><h3  id="step_four">Step Four</h3></dt>
                                     <dd><p>
                                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                                         Aenean commodo ligula eget dolor. Aenean massa.
@@ -119,7 +124,7 @@
                             </li>
                             <li>
                                 <dl>
-                                    <dt><h3>Step Five</h3></dt>
+                                    <dt><h3  id="step_five">Step Five</h3></dt>
                                     <dd><p>
                                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                                         Aenean commodo ligula eget dolor. Aenean massa.
@@ -138,122 +143,122 @@
                         PrismJS is used as the syntax highlighter here.
                         You can build your own version via their website should you need to.
                     </p>
-                    <h3>HTML</h3>
-                    <div class="code-wrapper">
-                        <code>
-                            <pre>
-                            <span class="doctype comment"><</span><span class="doctype">!DOCTYPE></span>
-                                <span class="punctuation"><!--
-                            --><<span class="tag css-attr">html</span>>
-                                </span><!-- ///
-                                --><span class="punctuation"><!-- new DIV
-                                -->     <<span class="tag css-attr">div</span> <span class="attr-name element-css">class</span>="<span class="attr-val querries">wrapper</span>">
-                                </span><!--///
-                                --><span class="punctuation"><!--
-                                -->         <<span class="tag css-attr">h1</span>>Hello World!1<&sol;<span class="tag css-attr">h1</span>>
-                                </span><!--///
-                                --><span class="punctuation"><!--
-                                -->         <<span class="tag css-attr">p</span>>...<&sol;<span class="tag css-attr">p</span>>
-                                </span><!--///
-                                --><span class="punctuation"><!--
-                                -->         <<span class="tag css-attr">a</span> <!--
-                                --><span class="attr-name element-css">class</span>="<span class="attr-val querries">btn-link</span>" <span class="attr-name element-css">href</span>="<span class="attr-val querries">#</span>">BUTTON<&sol;<span class="tag css-attr">a</span>>
-                                </span><!--///
-                                --><span class="punctuation"><!--
-                                -->         <<span class="tag css-attr">p</span>>...<&sol;<span class="tag css-attr">p</span>>
-                                </span><!--///
-                                -->     <span class="punctuation"><&sol;div></span>
-                                <span class="punctuation"><!-- New DIV
-                                -->     <<span class="tag css-attr">div</span> <span class="attr-name element-css">class</span>="<span class="attr-val querries">wrapper</span>">
-                                </span><!--///
-                                --><span class="punctuation"><!--
-                                -->         <<span class="tag css-attr">h1</span>>Hello World!2<&sol;<span class="tag css-attr">h1</span>>
-                                </span><!--///
-                                --><span class="punctuation"><!--
-                                -->         <<span class="tag css-attr">p</span>>...<&sol;<span class="tag css-attr">p</span>>
-                                </span><!--///
-                                --><span class="punctuation"><!--
-                                -->         <<span class="tag css-attr">a</span> <!--
-                                --><span class="attr-name element-css">class</span>="<span class="attr-val querries">btn-link</span>" <span class="attr-name element-css">href</span>="<span class="attr-val querries">#</span>">BUTTON<&sol;<span class="tag css-attr">a</span>>
-                                </span><!--///
-                                --><span class="punctuation"><!--
-                                -->         <<span class="tag css-attr">p</span>>...<&sol;<span class="tag css-attr">p</span>>
-                                </span><!--///
-                                -->     <span class="punctuation"><&sol;div></span>
-                                <span class="punctuation"><&sol;html></span>
-                            </pre>
-                        </code>
-                    </div>
+                    <ol style="list-style-type: none;">
+                    <li><h3  id="HTML">HTML</h3></li>
+<div class="code-wrapper">
+    <code>
+    <pre>
+    <span class="doctype comment"><</span><span class="doctype comment">!DOCTYPE></span>
+    <span class="punctuation"><!--
+    --><<span class="tag css-attr">html</span>>
+    </span><!-- ///
+    --><span class="punctuation"><!-- new DIV
+    -->     <<span class="tag css-attr">div</span> <span class="attr-name element-css">class</span>="<span class="attr-val querries">wrapper</span>">
+    </span><!--///
+    --><span class="punctuation"><!--
+    -->         <<span class="tag css-attr">h1</span>>Hello World!1<&sol;<span class="tag css-attr">h1</span>>
+    </span><!--///
+    --><span class="punctuation"><!--
+    -->         <<span class="tag css-attr">p</span>>...<&sol;<span class="tag css-attr">p</span>>
+    </span><!--///
+    --><span class="punctuation"><!--
+    -->         <<span class="tag css-attr">a</span> <!--
+    --><span class="attr-name element-css">class</span>="<span class="attr-val querries">btn-link</span>" <span class="attr-name element-css">href</span>="<span class="attr-val querries">#</span>">BUTTON<&sol;<span class="tag css-attr">a</span>>
+    </span><!--///
+    --><span class="punctuation"><!--
+    -->         <<span class="tag css-attr">p</span>>...<&sol;<span class="tag css-attr">p</span>>
+    </span><!--///
+    -->     <span class="punctuation"><&sol;<span class="tag css-attr">div</span>></span>
+    <span class="punctuation"><!-- New DIV
+    -->     <<span class="tag css-attr">div</span> <span class="attr-name element-css">class</span>="<span class="attr-val querries">wrapper</span>">
+    </span><!--///
+    --><span class="punctuation"><!--
+    -->         <<span class="tag css-attr">h1</span>>Hello World!2<&sol;<span class="tag css-attr">h1</span>>
+    </span><!--///
+    --><span class="punctuation"><!--
+    -->         <<span class="tag css-attr">p</span>>...<&sol;<span class="tag css-attr">p</span>>
+    </span><!--///
+    --><span class="punctuation"><!--
+    -->         <<span class="tag css-attr">a</span> <!--
+    --><span class="attr-name element-css">class</span>="<span class="attr-val querries">btn-link</span>" <span class="attr-name element-css">href</span>="<span class="attr-val querries">#</span>">BUTTON<&sol;<span class="tag css-attr">a</span>>
+    </span><!--///
+    --><span class="punctuation"><!--
+    -->         <<span class="tag css-attr">p</span>>...<&sol;<span class="tag css-attr">p</span>>
+    </span><!--///
+    -->     <span class="punctuation"><&sol;<span class="tag css-attr">div</span>></span>
+    <span class="punctuation"><&sol;<span class="tag css-attr">html></span></span>
+    </pre>
+    </code>
+</div>
+                    <li><h3  id="CSS_Example_1">CSS Example 1</h3></li>
+<div class="code-wrapper">
+    <code>
+    <pre>
+    <span class="doctype comment">/* ---- Styling ---- */</span>
+    <span class="attr-name element-css">Body</span><span class="punctuation">{ </span>
+        <span class="tag css-attr">
+        font-family <span class="punctuation">: 'Open Sans', arial, sans-serif;</span>
+        color <span class="punctuation">: #333;</span>
+        font-size <span class="punctuation">: 16px;</span>
+        -webkit-font-smoothing <span class="punctuation">: antialiased;</span>
+        -moz-osx-font-smoothing <span class="punctuation">: grayscale;</span>
+    </span><!--
+    --><span class="punctuation">} </span>
 
-                    <h3>CSS Example 1</h3>
-                    <div class="code-wrapper">
-                        <code>
-                            <pre>
-                            <span class="doctype comment">/* ---- Styling ---- */</span>
-                            <span class="attr-name element-css">Body</span><span class="punctuation">{ </span>
-                                <span class="tag css-attr">
-                                font-family <span class="punctuation">: 'Open Sans', arial, sans-serif;</span>
-                                color <span class="punctuation">: #333;</span>
-                                font-size <span class="punctuation">: 16px;</span>
-                                -webkit-font-smoothing <span class="punctuation">: antialiased;</span>
-                                -moz-osx-font-smoothing <span class="punctuation">: grayscale;</span>
-                            </span><!--
-                            --><span class="punctuation">} </span>
+    </pre>
+    </code>
+</div>
+                    <li><h3 id="CSS_Example_2">CSS Example 2</h3></li>
+<div class="code-wrapper">
+    <code>
+    <pre>
+    <span class="doctype comment">/* ---- Styling ---- */</span>
+    <span class="attr-val querries">@mixin transform<span class="punctuation">(</span>$property<span class="punctuation">) {</span></span>
+        <span class="attr-name element-css">Body</span><span class="punctuation">{ </span>
+        <span class="tag css-attr">
+            -webkit-transform <span class="punctuation">: $property;</span>
+            -ms-transform<span class="punctuation">: $property;</span>
+            transform<span class="punctuation">: $property;</span>
+        </span><!--
+        --><span class="punctuation">} </span>
+    <span class="punctuation">} </span>
+    </pre>
+    </code>
+</div>
+                    <li><h3 id="CSS_Example_3">CSS Example 3</h3></li>
+<div class="code-wrapper">
+    <code>
+    <pre>
+    <span class="doctype comment">/* ---- Styling ---- */</span>
+    <span class="attr-val querries">@base<span class="punctuation"> : </span>#ffff15<span class="punctuation">;</span></span>
+    <span class="attr-val querries">@width<span class="punctuation"> : </span>0.5<span class="punctuation">;</span></span>
+        <span class="attr-name element-css">.class</span><span class="punctuation">{ </span>
+        <span class="tag css-attr">
+            width <span class="punctuation">: </span><span class="attr-val querries">percentage<span class="punctuation">(</span>@width<span class="punctuation">);</span></span>
+            color<span class="punctuation">: </span><span class="attr-val querries">saturate<span class="punctuation">(</span>@base, 5%<span class="punctuation">);</span></span>
+            background-color<span class="punctuation">: </span><span class="attr-val querries">spin<span class="punctuation">(</span>lighten<span class="punctuation">(</span>@base, 25%<span class="punctuation">)</span>, 0<span class="punctuation">);</span></span>
+        </span><!--
+        --><span class="punctuation">} </span>
+    <span class="punctuation">} </span>
+    </pre>
+    </code>
+</div>
+                    <li><h3 id="JavaScript_Example">JavaScript Example</h3></li>
+<div class="code-wrapper">
+    <code>
+    <pre>
+    <span class="punctuation">&lsaquo;script&rsaquo;
+        <span class="function">function</span><span class="attr-val querries"> myFunction</span>(a, b) {
+            <span class="function">return</span>a * b;
+        }
+        document.<span class="attr-val querries">getElementById</span>(<span class="attr-name element-css">"demo"</span>).innerHTML = <span class="attr-val querries">myFunction</span>(<span class="integer">4</span>, <span class="integer">3</span>);
+    &lsaquo;&frasl;script&rsaquo;
+    </span>
+    </pre>
+    </code>
+</div>
+                    </ol>
 
-                            </pre>
-                        </code>
-                    </div>
-                    <h3>CSS Example 2</h3>
-                    <div class="code-wrapper">
-                        <code>
-                            <pre>
-                            <span class="doctype comment">/* ---- Styling ---- */</span>
-                            <span class="attr-val querries">@mixin transform<span class="punctuation">(</span>$property<span class="punctuation">) {</span></span>
-                                <span class="attr-name element-css">Body</span><span class="punctuation">{ </span>
-                                <span class="tag css-attr">
-                                    -webkit-transform <span class="punctuation">: $property;</span>
-                                    -ms-transform<span class="punctuation">: $property;</span>
-                                    transform<span class="punctuation">: $property;</span>
-                                </span><!--
-                                --><span class="punctuation">} </span>
-                            <span class="punctuation">} </span>
-                            </pre>
-                        </code>
-                    </div>
-                    <h3>CSS Example 3</h3>
-                    <div class="code-wrapper">
-                        <code>
-                            <pre>
-                            <span class="doctype comment">/* ---- Styling ---- */</span>
-                            <span class="attr-val querries">@base<span class="punctuation"> : </span>#ffff15<span class="punctuation">;</span></span>
-                            <span class="attr-val querries">@width<span class="punctuation"> : </span>0.5<span class="punctuation">;</span></span>
-                                <span class="attr-name element-css">.class</span><span class="punctuation">{ </span>
-                                <span class="tag css-attr">
-                                    width <span class="punctuation">: </span><span class="attr-val querries">percentage<span class="punctuation">(</span>@width<span class="punctuation">);</span></span>
-                                    color<span class="punctuation">: </span><span class="attr-val querries">saturate<span class="punctuation">(</span>@base, 5%<span class="punctuation">);</span></span>
-                                    background-color<span class="punctuation">: </span><span class="attr-val querries">spin<span class="punctuation">(</span>lighten<span class="punctuation">(</span>@base, 25%<span class="punctuation">)</span>, 0<span class="punctuation">);</span></span>
-                                </span><!--
-                                --><span class="punctuation">} </span>
-                            <span class="punctuation">} </span>
-                            </pre>
-                        </code>
-                    </div>
-                    <h3>JavaScript Example</h3>
-                    <div class="code-wrapper">
-                        <code>
-                            <pre>
-                            <span class="punctuation">&lsaquo;script&rsaquo;
-                                <span class="function">function</span><span class="attr-val querries">myFunction</span>(a, b) {
-                                    <span class="function">return</span>a * b;
-                                }
-                                document.<span class="attr-val querries">getElementById</span>(<span class="attr-name element-css">"demo"</span>).innerHTML = <span class="attr-val querries">myFunction</span>(<span class="integer">4</span>, <span class="integer">3</span>);
-                            &lsaquo;&frasl;script&rsaquo;
-                            </span>
-
-
-                            </pre>
-                        </code>
-                    </div>
                 </section>
                 <section id="Accessibility" class="main-section">
                     <header>
@@ -270,7 +275,7 @@
                     <ol style="list-style-type: none;">
                         <li>
                             <dl>
-                                <dt><h3>Mobile</h3></dt>
+                                <dt><h3 id="Mobile">Mobile</h3></dt>
                                 <dd><p>
                                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                                     Aenean commodo ligula eget dolor. Aenean massa.
@@ -281,7 +286,7 @@
                         </li>
                         <li>
                             <dl>
-                                <dt><h3>Web</h3></dt>
+                                <dt><h3 id="Web">Web</h3></dt>
                                 <dd><p>
                                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                                     Aenean commodo ligula eget dolor. Aenean massa.
@@ -303,7 +308,7 @@
                     </p>
                     <div class="resources-wrapper">
                         <div class="resources-content">
-                            <h3>Lis1 1 Example</h3>
+                            <h3 id="List_1_Example">List 1 Example</h3>
                             <ol>
                                 <li>Lorem ipsum dolor sit amet.</li>
                                 <li>Aliquam tincidunt mauris.</li>
@@ -320,7 +325,7 @@
                             </ol>
                         </div>
                         <div class="resources-content">
-                            <h3>Lis1 2 Example</h3>
+                            <h3 id="List_2_Example">List 2 Example</h3>
                             <ol>
                                 <li>Lorem ipsum dolor sit amet.</li>
                                 <li>Aliquam tincidunt mauris.</li>
@@ -353,7 +358,7 @@
                     </p>
                     <ol style="list-style-type: none;">
                         <li>
-                            <h3>FAQ Catagory 1</h3>
+                            <h3 id="FAQ_Catagory_1">FAQ Catagory 1</h3>
                             <dl>
                                 <dt> <h5><i class="fas fa-question-circle"></i> What is sit amet quam eget lacinia?</h5> </dt>
                                 <dd><p>
@@ -390,7 +395,7 @@
                         </li>
 
                         <li>
-                            <h3>FAQ Catagory 2</h3>
+                            <h3 id="FAQ_Catagory_2">FAQ Catagory 2</h3>
                             <dl>
                                 <dt> <h5><i class="fas fa-question-circle"></i> What is sit amet quam eget lacinia?</h5> </dt>
                                 <dd><p>
@@ -427,7 +432,7 @@
                         </li>
 
                         <li>
-                            <h3>FAQ Catagory 3</h3>
+                            <h3 id="FAQ_Catagory_3">FAQ Catagory 3</h3>
                             <dl>
                                 <dt> <h5><i class="fas fa-question-circle"></i> What is sit amet quam eget lacinia?</h5> </dt>
                                 <dd><p>
@@ -455,11 +460,12 @@
 
     </script>
     <script type="text/javascript">
-    // alert("here");
+
         var showBttn = document.getElementById('showHide-navbar');
         var navbarLeft = document.getElementById('navbar');
         var p = document.getElementsByTagName("pre");
         const mediaScreen = window.matchMedia("(min-width: 965px)");
+        const mediaScreenx = window.matchMedia("(max-width: 965px)");
         // p.textContent = p.textContent.replace(/^\s+/mg, "");
         function showHide(){
             if(showBttn.classList.contains('show')){
@@ -485,6 +491,14 @@
           }
         }
 
+        function closeWhenClick(){
+            if (mediaScreenx.matches) {
+                navbarLeft.style.animation = 'hideNavbar 1s forwards';
+                navbarLeft.style.animationPlayState = "play";
+                showBttn.classList.add('show');
+                showBttn.classList.remove('hide');
+            }
+        }
         mediaScreen.addListener(mediaWidthCheck);
         mediaWidthCheck(mediaScreen); // Call listener function at run time
         // Attach listener function on state changes

@@ -70,6 +70,22 @@ a{
         animation: hideNavbar 1s forwards;
         animation-play-state: play;
     }
-
-
+}
+@media screen and (max-width: 350px) {
+    #navbar{
+        left:-120%;
+        width:90%;
+    }
+    #navbar>header>h2{
+        margin-bottom:0;
+        font-size: 1.9rem;
+    }
+    @keyframes showNavbar {
+        from {left:-120%;}
+        to {left:0%;}
+    }
+    @keyframes hideNavbar {
+        from {left:0%;}
+        to {left:-120%;}
+    }
 }
